@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Talkative</string>
+
+    <string name="hint_password">your password....</string>
+    <string name="hint_cpassword">Confirm your password....</string>
+    <string name="hint_email">your email....</string>
+    <string name="hint_username">your username....</string>
+    <string name="btn_login">login</string>
+    <string name="btn_signup">Create new account</string>
+    <string name="btn_signup1">Signup</string>
+    <string name="swipe">swipe down to reach to login page.</string>
+    <string name="or">or</string>
+    <string name="FriendRequests">Friend Requests</string>
+    <string name="FriendList">Friend List</string>
+    <string name="RegisteredUsers">Registered Users</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Settings">Settings</string>
+    <string name="Logout">Logout</string>
+    <string name="recentChats">All Chats</string>
+    <string name="title">Do you really want to  Unfriend?</string>
+    <string name="content">On being unfriend,this person is removed from your friend list and you cannot chat with him again.</string>
+    <string name="agree">OK</string>
+    <string name="negative">Cancel</string>
+</resources>

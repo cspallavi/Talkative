@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:title="Talkative"
+            android:background="@color/colorPrimary"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/profile_circular_border"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="5dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@+id/user_profile_photo"
+            android:text="Name:"
+            android:paddingLeft="30sp"
+            android:paddingTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+
+
+            />
+        <TextView
+            android:layout_below="@+id/user_profile_photo"
+            android:id="@+id/name1"
+            android:paddingLeft="10sp"
+            android:paddingTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name"
+            android:textColor="#000000"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="Status:"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="15sp"
+            android:id="@+id/status"
+            />
+        <TextView
+            android:id="@+id/status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/status"
+            android:textColor="#000000"
+            android:layout_below="@+id/name1"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status"
+            android:text="Gender:"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="15sp"
+            android:id="@+id/gender"
+            />
+        <TextView
+            android:id="@+id/gender1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gender"
+            android:textColor="#000000"
+            android:layout_below="@+id/status1"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:text="No.of friends:"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="15sp"
+            android:id="@+id/friends"
+            />
+        <TextView
+            android:id="@+id/friends1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/friends"
+            android:textColor="#000000"
+            android:layout_below="@+id/gender1"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friends"
+            android:text="Friend Status:"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="15sp"
+            android:id="@+id/friend_status"
+
+            />
+        <TextView
+            android:id="@+id/friend_status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/friend_status"
+            android:textColor="#000000"
+            android:layout_below="@+id/friends1"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="10sp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:text="To know about this person send friend request ."/>
+        <Button android:id="@+id/send_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Friend Request"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:background="#558b2f"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/message"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"/>
+        <Button android:id="@+id/accept_deny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT/DENY"
+            android:background="#558b3f"
+            android:textColor="#ffffff"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/send_request"
+            android:layout_marginBottom="20sp"
+            android:visibility="gone"
+            />
+
+
+
+        </RelativeLayout>
+    </ScrollView>

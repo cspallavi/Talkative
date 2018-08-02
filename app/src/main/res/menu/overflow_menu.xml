@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/friendRequests"
+
+        android:title="@string/FriendRequests"
+        app:showAsAction="never"/>
+
+    <!-- Settings, should always be in the overflow -->
+
+    <item android:id="@+id/friendList"
+        android:title="@string/FriendList"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/registeredUsers"
+        android:title="@string/RegisteredUsers"
+        app:showAsAction="never"/>
+    <item android:id="@+id/recentChats"
+        android:title="@string/recentChats"
+        app:showAsAction="never"/>
+    <item android:id="@+id/passwordChange"
+        android:title="Change Password"
+        app:showAsAction="never"/>
+    <item android:id="@+id/myProfile"
+        android:title="My Profile"
+        app:showAsAction="never"/>
+    <item android:id="@+id/logout"
+        android:title="@string/Logout"
+        app:showAsAction="never"/>
+
+</menu>
